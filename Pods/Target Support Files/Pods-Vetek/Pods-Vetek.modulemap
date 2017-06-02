@@ -1,0 +1,6 @@
+framework module Pods_Vetek {
+  umbrella header "Pods-Vetek-umbrella.h"
+
+  export *
+  module * { export * }
+}

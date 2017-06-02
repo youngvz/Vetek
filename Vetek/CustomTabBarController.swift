@@ -12,7 +12,7 @@ class CustomTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let homeFeedController = ViewController()
+        let homeFeedController = HomeFeedViewController()
         let navHomeController = UINavigationController(rootViewController: homeFeedController)
         navHomeController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected") )
         
@@ -20,12 +20,12 @@ class CustomTabBarController: UITabBarController {
         let navMessagesController = UINavigationController(rootViewController: messagesController)
         navMessagesController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "chat_unselected"), selectedImage: #imageLiteral(resourceName: "chat_selected") )
 
-        let calendarController = CalendarViewController()
-        let navCalendarController = UINavigationController(rootViewController: calendarController)
-        navCalendarController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "calendar_unselected"), selectedImage: #imageLiteral(resourceName: "calendar_selected") )
+        let profileController = ProfileViewController()
+        let navProfileController = UINavigationController(rootViewController: profileController)
+        navProfileController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected"))
 
         
-        viewControllers = [ navHomeController, navMessagesController, navCalendarController ]
+        viewControllers = [ navHomeController, navMessagesController, navProfileController ]
         
         setupTabBar()
     }

@@ -71,6 +71,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return btn
     }()
     
+    lazy var signUpButton: UIButton = {
+        let btn = UIButton()
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+        btn.setTitle("Sign Up", for: .normal)
+        btn.setTitleColor(UIColor(red:0.03, green:0.05, blue:0.44, alpha:1.00), for: .normal)
+        return btn
+    }()
+    
     func handleLogIn(){
         
         guard let emailText = loginTextField.text, !emailText.isEmpty, let passwordText = passwordTextField.text, !passwordText.isEmpty else {
@@ -80,11 +89,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
     
+    func handleSignUp(){
+        
+        let signUpViewController = SignUpViewController()
+        navigationController?.pushViewController(signUpViewController, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupViews()
         setupHelperFunctions()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func setupViews(){
@@ -94,6 +122,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(loginTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
+        view.addSubview(signUpButton)
+        
         
         logoImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         logoImage.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -120).isActive = true
@@ -110,16 +140,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
         passwordTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
+        signUpButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        signUpButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        signUpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -12).isActive = true
+        signUpButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
         loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         loginButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -12).isActive = true
+        loginButton.bottomAnchor.constraint(equalTo: signUpButton.topAnchor, constant: -12).isActive = true
         loginButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
     }
 
     func setupHelperFunctions(){
+        setupViews()
         hideKeyboardWhenTappedAround()
     }
-
 }
 

@@ -1,0 +1,6 @@
+framework module Pods_VetekTests {
+  umbrella header "Pods-VetekTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

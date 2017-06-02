@@ -30,7 +30,6 @@ extension MessagesViewController {
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
-        
         messageButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
         messageButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         messageButton.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor, constant: -10).isActive = true
@@ -48,7 +47,6 @@ extension MessagesViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "KohinoorBangla-Light", size: 26)!,NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Messages"
-        
     }
     
     func messageButtonTapped(){

@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03BC76421EE2015500BE1E90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76411EE2015500BE1E90 /* AppDelegate.swift */; };
-		03BC76441EE2015500BE1E90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76431EE2015500BE1E90 /* ViewController.swift */; };
-		03BC76471EE2015500BE1E90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BC76451EE2015500BE1E90 /* Main.storyboard */; };
+		031A932F1EE2104A00D84AA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 031A932E1EE2104A00D84AA1 /* GoogleService-Info.plist */; };
+		031A93311EE212F600D84AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A93301EE212F600D84AA1 /* SignUpViewController.swift */; };
 		03BC76491EE2015500BE1E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BC76481EE2015500BE1E90 /* Assets.xcassets */; };
 		03BC764C1EE2015500BE1E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BC764A1EE2015500BE1E90 /* LaunchScreen.storyboard */; };
 		03BC76571EE2015500BE1E90 /* VetekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76561EE2015500BE1E90 /* VetekTests.swift */; };
 		03BC76621EE2015500BE1E90 /* VetekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76611EE2015500BE1E90 /* VetekUITests.swift */; };
+		03BC76771EE201B500BE1E90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC766F1EE201B500BE1E90 /* AppDelegate.swift */; };
+		03BC76781EE201B500BE1E90 /* HomeFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76701EE201B500BE1E90 /* HomeFeedController.swift */; };
+		03BC76791EE201B500BE1E90 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76711EE201B500BE1E90 /* MessagesController.swift */; };
+		03BC767A1EE201B500BE1E90 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76721EE201B500BE1E90 /* ProfileViewController.swift */; };
+		03BC767B1EE201B500BE1E90 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76731EE201B500BE1E90 /* CustomTabBarController.swift */; };
+		03BC767D1EE201B500BE1E90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76751EE201B500BE1E90 /* LoginViewController.swift */; };
+		03BC767E1EE201B500BE1E90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76761EE201B500BE1E90 /* Extensions.swift */; };
+		03BC76831EE2051300BE1E90 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76821EE2051300BE1E90 /* ConversationCell.swift */; };
+		03BC76881EE205A300BE1E90 /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76871EE205A300BE1E90 /* HomeFeedView.swift */; };
+		03BC768B1EE2063300BE1E90 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC768A1EE2063300BE1E90 /* MessagesView.swift */; };
+		03BC768D1EE2068400BE1E90 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC768C1EE2068400BE1E90 /* ProfileView.swift */; };
+		33A3F06DF404591CB479F59E /* Pods_VetekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F56BA483E37922BF556E4C /* Pods_VetekTests.framework */; };
+		35E10B7ADF8A76BCCCC68440 /* Pods_VetekUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A11054CB7640B66B4961A3 /* Pods_VetekUITests.framework */; };
+		E423B0857AB807F20746D663 /* Pods_Vetek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550AB110EC2FD37114983F88 /* Pods_Vetek.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		031A932E1EE2104A00D84AA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		031A93301EE212F600D84AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		03BC763E1EE2015500BE1E90 /* Vetek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vetek.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03BC76411EE2015500BE1E90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03BC76431EE2015500BE1E90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03BC76461EE2015500BE1E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03BC76481EE2015500BE1E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BC764B1EE2015500BE1E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03BC764D1EE2015500BE1E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,26 @@
 		03BC765D1EE2015500BE1E90 /* VetekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC76611EE2015500BE1E90 /* VetekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetekUITests.swift; sourceTree = "<group>"; };
 		03BC76631EE2015500BE1E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BC766F1EE201B500BE1E90 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03BC76701EE201B500BE1E90 /* HomeFeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFeedController.swift; sourceTree = "<group>"; };
+		03BC76711EE201B500BE1E90 /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		03BC76721EE201B500BE1E90 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		03BC76731EE201B500BE1E90 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		03BC76751EE201B500BE1E90 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03BC76761EE201B500BE1E90 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		03BC76821EE2051300BE1E90 /* ConversationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		03BC76871EE205A300BE1E90 /* HomeFeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
+		03BC768A1EE2063300BE1E90 /* MessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		03BC768C1EE2068400BE1E90 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		23A11054CB7640B66B4961A3 /* Pods_VetekUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetekUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F56BA483E37922BF556E4C /* Pods_VetekTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetekTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3110B76582D64F87E3BE0F7D /* Pods-Vetek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vetek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vetek/Pods-Vetek.debug.xcconfig"; sourceTree = "<group>"; };
+		4BD2877FFC1E7AD013967D29 /* Pods-VetekTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetekTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetekTests/Pods-VetekTests.release.xcconfig"; sourceTree = "<group>"; };
+		550AB110EC2FD37114983F88 /* Pods_Vetek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vetek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		759C3E1C56E773B0954AF3A7 /* Pods-VetekTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetekTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetekTests/Pods-VetekTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5A5B2AFCFD82D7D5F8387F6 /* Pods-VetekUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetekUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetekUITests/Pods-VetekUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE5B5FB0494BA2ABBF3402B7 /* Pods-VetekUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetekUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetekUITests/Pods-VetekUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F01325B229C5D6D2DD1CE583 /* Pods-Vetek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vetek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vetek/Pods-Vetek.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E423B0857AB807F20746D663 /* Pods_Vetek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A3F06DF404591CB479F59E /* Pods_VetekTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E10B7ADF8A76BCCCC68440 /* Pods_VetekUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +116,8 @@
 				03BC76551EE2015500BE1E90 /* VetekTests */,
 				03BC76601EE2015500BE1E90 /* VetekUITests */,
 				03BC763F1EE2015500BE1E90 /* Products */,
+				475F5D22CA552C9B82AC70DA /* Pods */,
+				0F32645A493887AA4A2C8922 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +134,16 @@
 		03BC76401EE2015500BE1E90 /* Vetek */ = {
 			isa = PBXGroup;
 			children = (
-				03BC76411EE2015500BE1E90 /* AppDelegate.swift */,
-				03BC76431EE2015500BE1E90 /* ViewController.swift */,
-				03BC76451EE2015500BE1E90 /* Main.storyboard */,
+				03BC766F1EE201B500BE1E90 /* AppDelegate.swift */,
+				03BC76731EE201B500BE1E90 /* CustomTabBarController.swift */,
+				03BC76891EE2061F00BE1E90 /* Model */,
+				03BC76861EE2059700BE1E90 /* View */,
+				03BC767F1EE2044900BE1E90 /* Controller */,
+				03BC76801EE2046600BE1E90 /* Other */,
 				03BC76481EE2015500BE1E90 /* Assets.xcassets */,
 				03BC764A1EE2015500BE1E90 /* LaunchScreen.storyboard */,
 				03BC764D1EE2015500BE1E90 /* Info.plist */,
+				031A932E1EE2104A00D84AA1 /* GoogleService-Info.plist */,
 			);
 			path = Vetek;
 			sourceTree = "<group>";
@@ -125,6 +166,83 @@
 			path = VetekUITests;
 			sourceTree = "<group>";
 		};
+		03BC767F1EE2044900BE1E90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03BC76701EE201B500BE1E90 /* HomeFeedController.swift */,
+				03BC76711EE201B500BE1E90 /* MessagesController.swift */,
+				03BC76721EE201B500BE1E90 /* ProfileViewController.swift */,
+				03BC76851EE2052200BE1E90 /* SignUpFlow */,
+				03BC76841EE2051900BE1E90 /* Cells */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		03BC76801EE2046600BE1E90 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				03BC76761EE201B500BE1E90 /* Extensions.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		03BC76841EE2051900BE1E90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				03BC76821EE2051300BE1E90 /* ConversationCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		03BC76851EE2052200BE1E90 /* SignUpFlow */ = {
+			isa = PBXGroup;
+			children = (
+				03BC76751EE201B500BE1E90 /* LoginViewController.swift */,
+				031A93301EE212F600D84AA1 /* SignUpViewController.swift */,
+			);
+			name = SignUpFlow;
+			sourceTree = "<group>";
+		};
+		03BC76861EE2059700BE1E90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BC76871EE205A300BE1E90 /* HomeFeedView.swift */,
+				03BC768A1EE2063300BE1E90 /* MessagesView.swift */,
+				03BC768C1EE2068400BE1E90 /* ProfileView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		03BC76891EE2061F00BE1E90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F32645A493887AA4A2C8922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550AB110EC2FD37114983F88 /* Pods_Vetek.framework */,
+				29F56BA483E37922BF556E4C /* Pods_VetekTests.framework */,
+				23A11054CB7640B66B4961A3 /* Pods_VetekUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		475F5D22CA552C9B82AC70DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3110B76582D64F87E3BE0F7D /* Pods-Vetek.debug.xcconfig */,
+				F01325B229C5D6D2DD1CE583 /* Pods-Vetek.release.xcconfig */,
+				759C3E1C56E773B0954AF3A7 /* Pods-VetekTests.debug.xcconfig */,
+				4BD2877FFC1E7AD013967D29 /* Pods-VetekTests.release.xcconfig */,
+				D5A5B2AFCFD82D7D5F8387F6 /* Pods-VetekUITests.debug.xcconfig */,
+				DE5B5FB0494BA2ABBF3402B7 /* Pods-VetekUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03BC76661EE2015500BE1E90 /* Build configuration list for PBXNativeTarget "Vetek" */;
 			buildPhases = (
+				07356769918E99A27BFAA4B8 /* [CP] Check Pods Manifest.lock */,
 				03BC763A1EE2015500BE1E90 /* Sources */,
 				03BC763B1EE2015500BE1E90 /* Frameworks */,
 				03BC763C1EE2015500BE1E90 /* Resources */,
+				5F7FDCE49598196A7691C0EB /* [CP] Embed Pods Frameworks */,
+				C95F857C63A542BA16A78485 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03BC76691EE2015500BE1E90 /* Build configuration list for PBXNativeTarget "VetekTests" */;
 			buildPhases = (
+				1AE264C25FE70999CCD5C65C /* [CP] Check Pods Manifest.lock */,
 				03BC764E1EE2015500BE1E90 /* Sources */,
 				03BC764F1EE2015500BE1E90 /* Frameworks */,
 				03BC76501EE2015500BE1E90 /* Resources */,
+				60B4E405C7D8E087C04DE7C9 /* [CP] Embed Pods Frameworks */,
+				75E06BEF7C6324814C2421C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03BC766C1EE2015500BE1E90 /* Build configuration list for PBXNativeTarget "VetekUITests" */;
 			buildPhases = (
+				50E21574371F71763312FF78 /* [CP] Check Pods Manifest.lock */,
 				03BC76591EE2015500BE1E90 /* Sources */,
 				03BC765A1EE2015500BE1E90 /* Frameworks */,
 				03BC765B1EE2015500BE1E90 /* Resources */,
+				F97B9D1236AC31E93B5C4BA1 /* [CP] Embed Pods Frameworks */,
+				4113F6B506A2ECE2C4BC29CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +321,7 @@
 					03BC763D1EE2015500BE1E90 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = BZY65TYX78;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					03BC76511EE2015500BE1E90 = {
@@ -237,7 +365,7 @@
 			files = (
 				03BC764C1EE2015500BE1E90 /* LaunchScreen.storyboard in Resources */,
 				03BC76491EE2015500BE1E90 /* Assets.xcassets in Resources */,
-				03BC76471EE2015500BE1E90 /* Main.storyboard in Resources */,
+				031A932F1EE2104A00D84AA1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +385,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07356769918E99A27BFAA4B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1AE264C25FE70999CCD5C65C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4113F6B506A2ECE2C4BC29CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetekUITests/Pods-VetekUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E21574371F71763312FF78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F7FDCE49598196A7691C0EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vetek/Pods-Vetek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B4E405C7D8E087C04DE7C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetekTests/Pods-VetekTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E06BEF7C6324814C2421C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetekTests/Pods-VetekTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95F857C63A542BA16A78485 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vetek/Pods-Vetek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97B9D1236AC31E93B5C4BA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetekUITests/Pods-VetekUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03BC763A1EE2015500BE1E90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BC76441EE2015500BE1E90 /* ViewController.swift in Sources */,
-				03BC76421EE2015500BE1E90 /* AppDelegate.swift in Sources */,
+				03BC768B1EE2063300BE1E90 /* MessagesView.swift in Sources */,
+				03BC767D1EE201B500BE1E90 /* LoginViewController.swift in Sources */,
+				03BC767A1EE201B500BE1E90 /* ProfileViewController.swift in Sources */,
+				03BC76881EE205A300BE1E90 /* HomeFeedView.swift in Sources */,
+				03BC76791EE201B500BE1E90 /* MessagesController.swift in Sources */,
+				03BC767E1EE201B500BE1E90 /* Extensions.swift in Sources */,
+				031A93311EE212F600D84AA1 /* SignUpViewController.swift in Sources */,
+				03BC768D1EE2068400BE1E90 /* ProfileView.swift in Sources */,
+				03BC76831EE2051300BE1E90 /* ConversationCell.swift in Sources */,
+				03BC767B1EE201B500BE1E90 /* CustomTabBarController.swift in Sources */,
+				03BC76771EE201B500BE1E90 /* AppDelegate.swift in Sources */,
+				03BC76781EE201B500BE1E90 /* HomeFeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +575,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03BC76451EE2015500BE1E90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03BC76461EE2015500BE1E90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03BC764A1EE2015500BE1E90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,23 +681,30 @@
 		};
 		03BC76671EE2015500BE1E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110B76582D64F87E3BE0F7D /* Pods-Vetek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BZY65TYX78;
 				INFOPLIST_FILE = Vetek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VetekConsulting.Vetek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		03BC76681EE2015500BE1E90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01325B229C5D6D2DD1CE583 /* Pods-Vetek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BZY65TYX78;
 				INFOPLIST_FILE = Vetek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VetekConsulting.Vetek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +714,7 @@
 		};
 		03BC766A1EE2015500BE1E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759C3E1C56E773B0954AF3A7 /* Pods-VetekTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +730,7 @@
 		};
 		03BC766B1EE2015500BE1E90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD2877FFC1E7AD013967D29 /* Pods-VetekTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +746,7 @@
 		};
 		03BC766D1EE2015500BE1E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A5B2AFCFD82D7D5F8387F6 /* Pods-VetekUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BZY65TYX78;
@@ -483,6 +761,7 @@
 		};
 		03BC766E1EE2015500BE1E90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE5B5FB0494BA2ABBF3402B7 /* Pods-VetekUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BZY65TYX78;
@@ -514,6 +793,7 @@
 				03BC76681EE2015500BE1E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03BC76691EE2015500BE1E90 /* Build configuration list for PBXNativeTarget "VetekTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +802,7 @@
 				03BC766B1EE2015500BE1E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03BC766C1EE2015500BE1E90 /* Build configuration list for PBXNativeTarget "VetekUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +811,7 @@
 				03BC766E1EE2015500BE1E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
