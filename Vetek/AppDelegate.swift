@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Vetek
+//  UIKitBasics
 //
-//  Created by Viraj Shah on 6/2/17.
+//  Created by Viraj Shah on 6/1/17.
 //  Copyright © 2017 Vetek Consulting. All rights reserved.
 //
 
@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = CustomTabBarController()
+
+        UIApplication.shared.statusBarStyle = .lightContent
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().isTranslucent = false
+        
+
+
         return true
     }
 
