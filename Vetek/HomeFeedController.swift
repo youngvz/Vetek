@@ -14,7 +14,7 @@ extension HomeFeedViewController{
         super.viewDidLoad()
         
         setupViews()
-        checkIfLoggedIn()
+        perform(#selector(checkIfLoggedIn), with: nil, afterDelay: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -78,7 +78,7 @@ extension HomeFeedViewController{
 
         let logInViewController = LoginViewController()
         let navLogInController = UINavigationController(rootViewController: logInViewController)
-        navigationController?.present(navLogInController, animated: true, completion: nil)
+        navigationController?.present(navLogInController, animated: false, completion: nil)
         
     }
     

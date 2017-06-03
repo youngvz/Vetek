@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		031A932F1EE2104A00D84AA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 031A932E1EE2104A00D84AA1 /* GoogleService-Info.plist */; };
 		031A93311EE212F600D84AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A93301EE212F600D84AA1 /* SignUpViewController.swift */; };
+		031A93331EE33AB300D84AA1 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A93321EE33AB300D84AA1 /* ToDoCell.swift */; };
 		03BC76491EE2015500BE1E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BC76481EE2015500BE1E90 /* Assets.xcassets */; };
 		03BC764C1EE2015500BE1E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BC764A1EE2015500BE1E90 /* LaunchScreen.storyboard */; };
 		03BC76571EE2015500BE1E90 /* VetekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC76561EE2015500BE1E90 /* VetekTests.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		031A932E1EE2104A00D84AA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		031A93301EE212F600D84AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		031A93321EE33AB300D84AA1 /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		03BC763E1EE2015500BE1E90 /* Vetek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vetek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC76481EE2015500BE1E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BC764B1EE2015500BE1E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				03BC76821EE2051300BE1E90 /* ConversationCell.swift */,
+				031A93321EE33AB300D84AA1 /* ToDoCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BC768B1EE2063300BE1E90 /* MessagesView.swift in Sources */,
+				031A93331EE33AB300D84AA1 /* ToDoCell.swift in Sources */,
 				03BC767D1EE201B500BE1E90 /* LoginViewController.swift in Sources */,
 				03BC767A1EE201B500BE1E90 /* ProfileViewController.swift in Sources */,
 				03BC76881EE205A300BE1E90 /* HomeFeedView.swift in Sources */,

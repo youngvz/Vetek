@@ -33,7 +33,7 @@ class MessagesViewController: UIViewController, UICollectionViewDataSource, UICo
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         var cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.contentInset = UIEdgeInsetsMake(6, 0, 0, 0)
+        cv.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         cv.backgroundColor = UIColor(white: 0.9, alpha: 1)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.dataSource = self
