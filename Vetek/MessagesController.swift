@@ -63,7 +63,7 @@ extension MessagesViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width - 8, height: 60)
+        return CGSize(width: view.frame.width - 8, height: 70)
     }
     
     func setupCollectionView(){
@@ -71,7 +71,7 @@ extension MessagesViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 4
     }
 
     

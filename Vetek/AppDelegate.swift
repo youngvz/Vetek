@@ -15,22 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        setupViews()
+
+        return true
+    }
+    
+    fileprivate func setupViews(){
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = CustomTabBarController()
-
+        
         UIApplication.shared.statusBarStyle = .lightContent
         UINavigationBar.appearance().barTintColor = UIColor.white
         UINavigationBar.appearance().isTranslucent = false
-        
-
-
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

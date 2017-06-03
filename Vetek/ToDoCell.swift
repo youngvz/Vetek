@@ -14,7 +14,7 @@ class ToDoCell: BaseCell {
     let profileImage: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.layer.cornerRadius = 20
+        img.layer.cornerRadius = 25
         img.contentMode = .scaleAspectFit
         img.backgroundColor = .systemColor("Blue")
         return img
@@ -24,7 +24,8 @@ class ToDoCell: BaseCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.adjustsFontSizeToFitWidth = true
-        label.text = "ChatRoom Name"
+        label.text = "Chatroom Name"
+        label.font = UIFont(name: "KohinoorBangla-Light", size: 18)
         label.textColor = .gray
         return label
     }()
@@ -35,11 +36,16 @@ class ToDoCell: BaseCell {
         backgroundColor = .white
         
         addSubview(profileImage)
-        
+        addSubview(chatRoomLabel)
         
         profileImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         profileImage.leftAnchor.constraint(equalTo: leftAnchor, constant: 12).isActive = true
-        profileImage.widthAnchor.constraint(equalToConstant: 40).isActive = true
-        profileImage.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        profileImage.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        profileImage.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        chatRoomLabel.leftAnchor.constraint(equalTo: profileImage.rightAnchor, constant: 10).isActive = true
+        chatRoomLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        chatRoomLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        chatRoomLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
 }

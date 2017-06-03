@@ -10,12 +10,16 @@ import UIKit
 
 extension HomeFeedViewController{
     
+    // MARK: Launch Methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
         perform(#selector(checkIfLoggedIn), with: nil, afterDelay: 0)
     }
+    
+    // MARK: CollectionView Delegate Methods
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 8
@@ -30,13 +34,11 @@ extension HomeFeedViewController{
         return CGSize(width: view.frame.width - 8, height: 120)
     }
     
-    func setupCollectionView(){
-        collectionView.register(ConversationCell.self, forCellWithReuseIdentifier: cellId)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 6
     }
+    
+    // MARK: Setup Methods
     
     func setupViews(){
         setupCollectionView()
@@ -53,7 +55,6 @@ extension HomeFeedViewController{
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 
-        
         addButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         addButton.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor, constant: -10).isActive = true
@@ -66,6 +67,10 @@ extension HomeFeedViewController{
         
     }
     
+    func setupCollectionView(){
+        collectionView.register(ConversationCell.self, forCellWithReuseIdentifier: cellId)
+    }
+    
     func setupNavBar(){
         navigationController?.navigationBar.barTintColor = UIColor.systemColor("Blue")
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "KohinoorBangla-Light", size: 26)!,NSForegroundColorAttributeName: UIColor.white]
@@ -73,6 +78,8 @@ extension HomeFeedViewController{
         self.navigationItem.title = "Vetek"
         
     }
+    
+    // MARK: Log In Methods
     
     func checkIfLoggedIn(){
 

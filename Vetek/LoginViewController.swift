@@ -48,20 +48,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return tf
     }()
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        if textField == loginTextField{
-            print("Dismiss TextField")
-            dismissKeyboard()
-        }else{
-            print("Log In")
-            dismissKeyboard()
-            handleLogIn()
-        }
-        
-        return true
-    }
-    
     lazy var loginButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -80,24 +66,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return btn
     }()
     
-    func handleLogIn(){
-        
-        guard let emailText = loginTextField.text, !emailText.isEmpty, let passwordText = passwordTextField.text, !passwordText.isEmpty else {
-            return
-        }
-        
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func handleSignUp(){
-        
-        let signUpViewController = SignUpViewController()
-        navigationController?.pushViewController(signUpViewController, animated: true)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupHelperFunctions()
     }
     
@@ -113,6 +84,35 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         // Show the navigation bar on other view controllers
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == loginTextField{
+            print("Dismiss TextField")
+            dismissKeyboard()
+        }else{
+            print("Log In")
+            dismissKeyboard()
+            handleLogIn()
+        }
+        
+        return true
+    }
+    
+    func handleLogIn(){
+        
+        guard let emailText = loginTextField.text, !emailText.isEmpty, let passwordText = passwordTextField.text, !passwordText.isEmpty else {
+            return
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func handleSignUp(){
+        
+        let signUpViewController = SignUpViewController()
+        navigationController?.pushViewController(signUpViewController, animated: true)
     }
     
     func setupViews(){
@@ -135,7 +135,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
         loginTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
-        passwordTextField.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: 12).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: 18).isActive = true
         passwordTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
         passwordTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
         passwordTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true

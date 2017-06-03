@@ -10,6 +10,8 @@ import UIKit
 
 class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
+    // MARK: Properties
+    
     let cellId = "cellId"
     
     lazy var addButton: UIImageView = {
